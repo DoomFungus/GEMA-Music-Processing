@@ -8,7 +8,7 @@ Dies ist die Lösung für eine Coding-Challenge. Die Aufgabe bestand darin, eine
 
 Dies ist eine Kommandozeilenanwendung. Sie verwendet eine Variante einer geschichteten Softwarearchitektur, wobei besonderer Wert auf Skalierbarkeit gelegt wurde.
 
-![alt text](https://github.com/DoomFungus/Musik-Nutzungsdaten-Pipeline/blob/main/Gema.png?raw=true)
+![alt text](https://github.com/DoomFungus/GEMA-Music-Processing/blob/main/Gema.png?raw=true)
 
 Die Verantwortlichkeiten sind wie folgt aufgeteilt: Das cli-Modul übernimmt die Interaktion mit der Schnittstelle, das pipeline-Modul die Geschäftslogik einschließlich Dateneingabe und -transformation, das db-Modul die Persistierung, und das enrich-Modul die Kommunikation mit einer externen API. In einem größeren Projekt könnten Transformation und Ingestion getrennt werden, hier war das jedoch nicht nötig.
 
@@ -48,7 +48,7 @@ This is a coding challenge solution. The task was to create a pipeline that woul
 
 This is a command-line application. It uses a version of a layered software architecture, with effort placed on scalability.
 
-![alt text](https://github.com/DoomFungus/Musik-Nutzungsdaten-Pipeline/blob/main/Gema.png?raw=true)
+![alt text](https://github.com/DoomFungus/GEMA-Music-Processing/blob/main/Gema.png?raw=true)
 
 The responsibilities are split as follows: cli module handles interface interaction, pipeline module handles business logic, including data ingestion and transformation, db module handles persistence, and enrich module handles interaction with an external API. In a bigger project, transformation and ingestion may be split off, but here there was no need.
 
