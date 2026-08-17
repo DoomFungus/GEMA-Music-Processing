@@ -1,0 +1,40 @@
+[project]
+name = "etl-pipeline"
+version = "0.1.0"
+description = "CSV ingest -> transform -> enrich (3rd party API) -> Postgres load"
+requires-python = ">=3.11"
+dependencies = [
+    "polars>=1.9",
+    "click>=8.1",
+    "httpx>=0.27",
+    "SQLAlchemy>=2.0",
+    "psycopg[binary]>=3.2",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "python-dotenv>=1.0",
+    "tenacity>=9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-mock>=3.14",
+    "respx>=0.21",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+etl = "etl_pipeline.cli:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
